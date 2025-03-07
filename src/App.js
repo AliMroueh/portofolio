@@ -3,7 +3,7 @@ import React, {  Suspense, useState } from 'react';
 import './App.css';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
-import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaTimes, FaBars  } from 'react-icons/fa';
+import { FaFacebook , FaLinkedin, FaGithub, FaTimes, FaBars  } from 'react-icons/fa';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -122,16 +122,16 @@ function App() {
 
     {/* Social Links */}
     <div className="socials flex justify-center space-x-6">
-      <a href="https://www.facebook.com/profile.php?id=100094427673102" className="text-gray-300 hover:text-gray-400" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=100094427673102" className="text-gray-300 hover:text-gray-400" target="_blank" rel="noopener noreferrer">
         <FaFacebook className="text-2xl" />
       </a>
-      <a target="_blank" href="https://github.com/AliMroueh" className="text-gray-300 hover:text-gray-400">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/AliMroueh" className="text-gray-300 hover:text-gray-400">
         <FaGithub className="text-2xl" />
       </a>
       {/* <a href="https://www.instagram.com/mhamadjomaa8/" className="text-gray-300 hover:text-gray-400">
         <FaInstagram className="text-2xl" />
       </a> */}
-      <a target="_blank" href="https://www.linkedin.com/in/ali-mroueh-jan2023" className="text-gray-300 hover:text-gray-400">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ali-mroueh-jan2023" className="text-gray-300 hover:text-gray-400">
         <FaLinkedin className="text-2xl" />
       </a>
     </div>

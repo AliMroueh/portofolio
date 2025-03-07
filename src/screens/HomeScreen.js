@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React, { useEffect } from 'react';
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import Progress from '../components/Progress';
 import Card from '../components/Card';
@@ -8,7 +8,7 @@ import Card from '../components/Card';
 export default function HomeScreen() {
 
   const { hash } = useLocation();
-  const videoRef = useRef(null);
+  // const videoRef = useRef(null);
 
   useEffect(() => {
     // Scroll to the specific section based on the hash
@@ -52,10 +52,10 @@ export default function HomeScreen() {
             Full Stack Developer
           </b>
           <div className='md:flex md:flex-row md:space-x-4 md:mt-3 md:justify-start flex flex-row space-x-3 mt-3 items-center justify-center'>
-            <a href='https://www.facebook.com/profile.php?id=100094427673102' target="_blank"><FaFacebook className='size-7' /></a>
-            <a href='https://github.com/AliMroueh' target="_blank"><FaGithub className='size-7 ml-6' /></a>
+            <a href='https://www.facebook.com/profile.php?id=100094427673102' target="_blank" rel="noopener noreferrer"><FaFacebook className='size-7' /></a>
+            <a href='https://github.com/AliMroueh' target="_blank" rel="noopener noreferrer"><FaGithub className='size-7 ml-6' /></a>
             {/* <a href='https://www.instagram.com/mhamadjomaa8/'><FaInstagram className='size-7 ml-6' /></a> */}
-            <a href='https://www.linkedin.com/in/ali-mroueh-jan2023' target="_blank"><FaLinkedin className='size-7 ml-6' /></a>
+            <a href='https://www.linkedin.com/in/ali-mroueh-jan2023' target="_blank" rel="noopener noreferrer"><FaLinkedin className='size-7 ml-6' /></a>
           </div>
           {/* <button className='border-2 mt-8 px-3.5 h-10' onClick={() => downloadFile()}>Download CV</button> */}
           <a href="/Ali_Mroueh.pdf" download="Ali_Mroueh.pdf">
