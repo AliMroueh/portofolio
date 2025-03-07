@@ -149,7 +149,7 @@ function App() {
 
     {/* Footer Bottom */}
     <div className="border-t border-gray-700 pt-4">
-      <p>&copy; Portfolio 2024 | Mhamad Jomaa</p>
+      <p>&copy; Portfolio 2025 | Ali Mroueh</p>
     </div>
   </div>
 </footer>
